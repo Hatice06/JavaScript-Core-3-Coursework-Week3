@@ -16,6 +16,9 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+Answer : console.log inside the function takes the x which is declared inside the function. Local variable .
+console.log outside the function takes the x which is on line 1 because it is global.
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +37,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+Answer: First console.log writes 10, second console.log return undefined because f1 function doesn't have any return, third console.log return is not defined because y is local variable inside f1 function.
 
 ## Question 3
 
@@ -62,3 +67,5 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+Answer: First console.log writes 9, second console.log writes {x: 10 }.
