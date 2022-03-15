@@ -84,7 +84,17 @@ for (let person of hogwarts) {
 
 for (let person of hogwarts) {
   let { firstName, lastName, house, pet, occupation } = person;
-  if (pet !== null) {
+  if (pet !== null && occupation === "Teacher") {
     console.log(`${firstName} ${lastName}`);
   };
+}
+
+// 2.solution
+
+function inGryffindor(school)  {
+  school.forEach((person) => {
+    const{firstName, lastName,house} = person;
+    if(house === "Gryffindor") console.log(firstName + " " + lastName);
+  });
+  
 }
